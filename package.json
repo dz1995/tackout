@@ -1,0 +1,19 @@
+{
+  "name": "zhiwangkeji",
+  "version": "1.0.0",
+  "description": "\"外卖页面\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "“”dz“”",
+  "license": "ISC",
+  "dependencies": {
+    "iscroll": "^5.2.0",
+    "jquery": "^3.1.1",
+    "seajs": "^3.0.2",
+    "swiper": "^3.4.1",
+    "weui": "^1.1.1",
+    "weui.js": "^1.1.0"
+  }
+}

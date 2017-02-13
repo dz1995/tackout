@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>芙蓉酒楼（西矿街点）[外卖]</title>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="stylesheet" href="../node_modules/weui/dist/style/weui.min.css">
+    <link rel="stylesheet" href="../node_modules/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../static/take-out/src/man.css">
+</head>
+<body ondragstart="return false;">
+    <div class="container">
+        <!--头部-->
+        <header class="nav menu">
+
+        <div class="left_two">
+            <a href="javascript:;" class="button-follow follow-wechatid" data-wechatid="xhy114" style="background: rgb(0, 187, 236);"><i></i>+ 关注</a>
+        </div>
+
+        <div>
+            <a href="/restaurant" class="on">外卖</a>
+
+            <a href="/reserve/reserveinfo">预订</a>
+
+            <a href="/restinfo">门店详情</a>
+        </div>
+        <div class="mebox">
+            <div class="mores"><a></a></div>
+            <div class="tab-show" style="display: none;">
+                <span></span>
+                <a href="/takeout/orderlist" alt="我的订单">我的外卖订单 </a>
+                <a href="/reserve/reserveorderlist" alt="我的订单">我的预订订单 </a>
+                <a href="/takeout/addresslist" alt="我的地址">我的收货地址 </a>
+            </div>
+        </div>
+        </header>
+        <!--浏览量-->
+        <div class="tj">
+            <ul>
+                <li>
+                    <span class="ol_sj"></span>
+                    <p>
+                        <font class="tj_nema">总浏览量：<em>126</em></font>
+                    </p>
+                    <div class="tj_line"></div>
+                </li>
+                <li>
+                    <span class="ol_gr"></span>
+                    <p>
+                        <font class="tj_nema">菜品总数：<em>23</em></font>
+                    </p>
+
+                </li>
+
+            </ul>
+        </div>
+        <!--轮播图-->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="javascript:;" style="display: block;"><img src="../static/take-out/img/lunbo.jpg" width="100%" alt="轮播图"></a>
+                </div>
+            </div>
+        </div>
+        <!--星期天的设置-->
+        <div class="week_date">
+            <a href="/restaurant?week=1" class='now_date' dateval="1">周一</a>
+            <a href="/restaurant?week=2"  dateval="2">周二</a>
+            <a href="/restaurant?week=3"  dateval="3">周三</a>
+            <a href="/restaurant?week=4"  dateval="4">周四</a>
+            <a href="/restaurant?week=5"  dateval="5">周五</a>
+            <a href="/restaurant?week=6"  dateval="6">周六</a>
+            <a href="/restaurant?week=0"  dateval="7">周日</a>
+        </div>
+        <!--表单数据-->
+        <form name="cart_form" action="/takeout/order/confirm" method="post">
+            <section class="menu_wrap skin1" id="menuWrap"> <!--另一套样式 需要在此处给class加上 skin1 -->
+                <div id="menuNav" class="menu_nav">
+                    <div class="ico_menu_wrap clearfix"><span class="ico_menu" id="icoMenu"><i></i></span></div>
+                    <div class="side_nav" id="sideNav">
+                        <ul>
+
+                            <li><a href='javascript:void(0);'>特色主食</a></li>
+
+                            <li><a href='javascript:void(0);'>盒饭套餐</a></li>
+
+                            <li><a href='javascript:void(0);'>金典商务营养套餐</a></li>
+
+                            <li><a href='javascript:void(0);'>金典湘菜</a></li>
+
+                            <li><a href='javascript:void(0);'>三晋家常菜</a></li>
+
+                            <li><a href='javascript:void(0);'>测试结果表明可以用的</a></li>
+
+                            <li><a href='javascript:void(0);'>阿斯达</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu_container">
+
+                    <div class="menu_tt"><h2>特色主食</h2></div>
+                    <ul class="menu_list">
+
+                        <li id="1306">
+                            <div style="display:block">
+                                <div><img src="http://res.quan.tm/attach/9z8oxv/thumb_image/2016-05/f5b01f27-dd24-465d-a067-28f4480d5028.jpg" alt="" url="http://res.quan.tm/attach/9z8oxv/image/2016-05/f5b01f27-dd24-465d-a067-28f4480d5028.jpg" /></div>
+                                <!-- url为菜单大图url，没有的话就是小图url，没有传图的话，这里显示 <div class="nopic"></div> -->
+                            </div>
+                            <div>
+                                <h3><div>福建炒米粉+开胃小菜</div></h3>
+                                <p>销量<span class="sale_num">59</span>
+                                    <span class="sale_unit sale_new">份<em></em><i class=""></i></span>
+
+                                </p>
+                                <div class="info">11：30前下单均赠送玉米羹一份</div>
+                            </div>
+
+                            <div class="price_wrap">
+                                <strong>￥<span class="unit_price" original-price='15.00'>9.00</span></strong>
+
+                                <div class="fr" max="999">
+                                    <a href="javascript:void(0);" class="btn add" data-id="1306" data-num="0"></a>
+                                    <input autocomplete="off" class="h_num" type="hidden" name="dish[1306]" value="0" />
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </form>
+    </div>
+</body>
+<script src="../node_modules/seajs/dist/sea.js">
+
+</script>
+<script>
+    seajs.config({
+        base:'../node_modules',
+        alias:{
+            mock: 'mockjs/dist/mock-min.js',
+            jquery:'jquery/dist/jquery.js',
+            iscroll:'iscroll/build/iscroll.js',
+            weuijs:'weui.js/dist/weui.js',
+            swiper:'swiper/dist/js/swiper.js'
+        }
+    })
+    seajs.use(['mock','jquery'], function() {
+        // 使用 Mock（全局变量）
+        var data = Mock.mock({
+            'list|1-10': [{
+                'id|+1': 1
+            }]
+        });
+
+        Mock.mock('/haha',{
+            'name'	   : '哈哈',
+            'age|1-100': 100,
+            'color'	   : '你好'
+        })
+    })
+    seajs.use('../static/take-out/src/main');
+</script>
+</html>
